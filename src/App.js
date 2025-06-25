@@ -37,7 +37,7 @@ function App() {
   const finalTotal = total - discountAmount;
 
   const generateWhatsAppLink = (cart, total) => {
-  const phone = process.env.REACT_APP_WA_PHONE || '6281337518574'; // fallback jika belum diatur
+  const phone = process.env.REACT_APP_WA_PHONE || '6280000000000'; // fallback jika belum diatur
   let message = `🛒 *Checkout GoDrone*\n\n`;
 
   cart.forEach((item, index) => {
