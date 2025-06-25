@@ -1,38 +1,88 @@
-.App {
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card img {
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+.card button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: #0a79df;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.card button:hover {
+  background: #0c5adb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.discount-box {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.discount-box input {
+  padding: 6px;
+  margin-right: 10px;
+}
+
+.discount-box button {
+  padding: 6px 12px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+.totals {
+  margin-top: 10px;
+}
+
+.wa-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #25D366; /* Warna hijau WhatsApp */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.wa-button:hover {
+  background-color: #1ebe5d;
 }
