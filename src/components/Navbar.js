@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo/logo.png'; // ganti path jika perlu
+import logo from '../assets/logo/logo2.png';
 
 export default function Navbar() {
   return (
@@ -23,7 +23,7 @@ const styles = {
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '10px 30px',
-    backgroundColor: '#0a79df',
+    backgroundColor: '#343A40',
     color: 'white',
   },
   left: {
@@ -31,9 +31,10 @@ const styles = {
     alignItems: 'center',
   },
   logo: {
-    width: 40,
-    height: 40,
+    width: 70,
+    height: 20,
     marginRight: 10,
+    marginLeft: -10,
   },
   brand: {
     margin: 0,
