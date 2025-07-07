@@ -30,7 +30,7 @@ body {
 .card button {
   margin-top: 10px;
   padding: 5px 10px;
-  background: #0a79df;
+  background: #6C757D;
   color: white;
   border: none;
   border-radius: 5px;
@@ -38,7 +38,7 @@ body {
 }
 
 .card button:hover {
-  background: #0c5adb;
+  background: #495057;
 }
 
 .discount-box {
@@ -76,7 +76,7 @@ button:hover {
 }
 
 .wa-button {
-  background-color: #6C757D;
+  background-color: #25D366;
   color: white;
   text-decoration: none;
   padding: 12px 24px;
@@ -88,7 +88,7 @@ button:hover {
 }
 
 .wa-button:hover {
-  background-color: #495057;
+  background-color: #1fb154;
 }
 
 .navbar {
