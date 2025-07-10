@@ -6,19 +6,19 @@ const products = [
   {
     id: 1,
     name: "Drone DJI Mini 3 Pro",
-    price: 8500000,
+    price: 300000000,
     image: mini3,
   },
   {
     id: 2,
     name: "DJI Air 2S",
-    price: 14500000,
+    price: 300000000,
     image: air2s,
   },
   {
     id: 3,
     name: "DJI FPV Combo",
-    price: 19000000,
+    price: 300000000,
     image: fpv,
   },
 ];
