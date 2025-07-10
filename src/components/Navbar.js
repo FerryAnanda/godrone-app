@@ -1,53 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import logo from '../assets/logo/logo2.png';
+import { Link, useLocation } from 'react-router-dom';
+import './Navbar.css';
 
-export default function Navbar() {
+const Navbar = ({ cartItems }) => {
+  const location = useLocation();
+  const totalItems = cartItems.length;
+
   return (
-    <nav style={styles.nav}>
-      <div style={styles.left}>
-        <img src={logo} alt="GoDrone Logo" style={styles.logo} />
-        <h2 style={styles.brand}>GoDrone</h2>
+    <nav className="navbar">
+      <div className="navbar-logo">
+        <img src="/logo.png" alt="logo" height="30" />
+        <span className="navbar-title">GoDrone</span>
       </div>
-      <div style={styles.right}>
-        <Link to="/" style={styles.link}>Beranda</Link>
-        <Link to="/login" style={styles.link}>Login</Link>
+      <div className="navbar-links">
+        <Link to="/" className="navbar-link">Home</Link>
+        <Link to="/checkout" className="navbar-link">
+        Keranjang {totalItems > 0 && `(${totalItems})`}
+        </Link>
+        <Link to="/login" className="navbar-link">Login</Link>
       </div>
     </nav>
   );
 }
 
-const styles = {
-  nav: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '10px 30px',
-    backgroundColor: '#343A40',
-    color: 'white',
-  },
-  left: {
-    display: 'flex',
-    alignItems: 'center',
-  },
-  logo: {
-    width: 70,
-    height: 20,
-    marginRight: 10,
-    marginLeft: -10,
-  },
-  brand: {
-    margin: 0,
-    fontSize: '24px',
-    fontWeight: 'bold',
-  },
-  right: {
-    display: 'flex',
-    gap: '20px',
-  },
-  link: {
-    color: 'white',
-    textDecoration: 'none',
-    fontWeight: 'bold',
-  },
-};
+export default Navbar;
