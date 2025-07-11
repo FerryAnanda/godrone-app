@@ -1,6 +1,7 @@
 import mini3 from './assets/drone/dji-mini-3-pro.jpg';
 import air2s from './assets/drone/dji-air-2s.jpg';
 import fpv from './assets/drone/dji-fpv-combo.jpg';
+import carrier from './assets/drone/carrier.jpg';
 
 const products = [
   {
@@ -20,6 +21,12 @@ const products = [
     name: "DJI FPV Combo",
     price: 300000000,
     image: fpv,
+  },
+  {
+    id: 4,
+    name: "Carrier",
+    price: 300000000,
+    image: carrier,
   },
 ];
 
