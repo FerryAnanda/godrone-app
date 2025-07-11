@@ -1,0 +1,60 @@
+.cart-container {
+  max-height: 240px;  /* tinggi cukup untuk 3 baris */
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.cart-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-item button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.cart-item button:hover {
+  background: #c82333;
+}
+
+.cart-more {
+  font-style: italic;
+  color: #777;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* Scrollbar styling */
+.cart-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cart-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* Responsif untuk mobile */
+@media screen and (max-width: 600px) {
+  .cart-container {
+    max-height: 180px;
+  }
+  .cart-item {
+    font-size: 14px;
+  }
+}
